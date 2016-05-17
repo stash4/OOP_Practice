@@ -1,4 +1,4 @@
-package ex4;
+package ex5;
 
 public class Card {
     private int mark;
