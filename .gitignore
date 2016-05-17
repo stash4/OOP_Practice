@@ -1,0 +1,34 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+
+# Eclipse project files
+/.settings/
+/.classpath
+/.project
+
+# Sample codes
+/src/chap11
+/src/chap12
+/src/chap13
+/src/chap14
+/src/chap17
+/src/chap18
+/src/chap19
+/src/lesson01
+/src/lesson02
+/src/lesson03
+/src/lesson04
+/src/lesson05
+/src/lesson06
+/src/mytool
+/src/yourtool
+
+# Others
+*.test
+*.swp
+/bin/
+/tmp/
