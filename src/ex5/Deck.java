@@ -5,7 +5,12 @@ import java.util.ArrayList;
 public class Deck {
     private ArrayList<Card> cardList;
 
-    void setCardList() {
+    public static void main(String[] args) {
+        Deck aDeck = new Deck();
+        aDeck.show();
+    }
+
+    public Deck() {
         cardList = new ArrayList<Card>();
         for (int m = 0; m < 4; m++) {
             for (int num = 1; num < 14; num++) {
@@ -15,15 +20,10 @@ public class Deck {
         }
     }
 
-    void show() {
+    public void show() {
         for (Card c : cardList) {
             System.out.println(c);
         }
     }
 
-    public static void main(String[] args) {
-        Deck aDeck = new Deck();
-        aDeck.setCardList();
-        aDeck.show();
-    }
 }
