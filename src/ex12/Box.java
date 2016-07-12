@@ -11,6 +11,12 @@ public class Box implements Decoratable {
 
     @Override
     public void decorate() {
+        this.printLine();
+        System.out.println("|" + str + "|");
+        this.printLine();
+    }
+
+    private void printLine() {
         String deco = "+";
         String enc = "SHIFT_JIS";
         int strBytes = 0;
@@ -24,8 +30,6 @@ public class Box implements Decoratable {
             deco += "-";
         }
         deco += "+";
-        System.out.println(deco);
-        System.out.println("|" + str + "|");
         System.out.println(deco);
     }
 }
