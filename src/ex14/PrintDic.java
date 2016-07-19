@@ -12,6 +12,7 @@ public class PrintDic {
                 String[] array = line.split(",");
                 System.out.println("英単語[" + array[0] + "]は、日本語の[" + array[1] + "]という意味です。");
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e);
         } catch (IOException e) {

@@ -11,6 +11,7 @@ public class ReadDic {
             while((line=reader.readLine())!=null){
                 System.out.println(line);
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e);
         } catch (IOException e) {

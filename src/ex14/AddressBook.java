@@ -29,6 +29,7 @@ public class AddressBook {
                 Address address = new Address(array[0], array[1], array[2], array[3]);
                 book.add(address);
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e);
         } catch (IOException e) {
@@ -38,12 +39,10 @@ public class AddressBook {
 
     public void save(String filename) {
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)));
             for (Address address : book) {
                 writer.println(address.toString());
             }
-            reader.close();
             writer.close();
         } catch (IOException e) {
             System.out.println(e);
